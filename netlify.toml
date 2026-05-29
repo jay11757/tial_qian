@@ -1,6 +1,6 @@
 [build]
-  command = "npm run build"
-  publish = "dist"
+  # 告诉Netlify：直接部署wordpress目录里的文件，不需要执行构建命令
+  publish = "wordpress"
 
 # 接口代理规则
 [[redirects]]
