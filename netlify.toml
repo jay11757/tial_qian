@@ -7,6 +7,7 @@ from = "/api/*"
 to = "https://catsup-cruelty-maturing.ngrok-free.dev/:splat"
 status = 200
 force = true
+headers = {ngrok-skip-browser-warning = "true"}
 
 [[redirects]]
 from = "/*"
