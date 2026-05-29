@@ -1,0 +1,16 @@
+[build]
+  command = "npm run build"
+  publish = "dist"
+
+# 接口代理规则
+[[redirects]]
+from = "/api/*"
+to = "https://catsup-cruelty-maturing.ngrok-free.dev/:splat"
+status = 200
+force = true
+
+# 解决路由刷新404
+[[redirects]]
+from = "/*"
+to = "/index.html"
+status = 200
