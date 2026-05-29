@@ -1,15 +1,13 @@
 [build]
-  # 告诉Netlify：直接部署wordpress目录里的文件，不需要执行构建命令
-  publish = "wordpress"
+  publish = "."
+  command = ""
 
-# 接口代理规则
 [[redirects]]
 from = "/api/*"
 to = "https://catsup-cruelty-maturing.ngrok-free.dev/:splat"
 status = 200
 force = true
 
-# 解决路由刷新404
 [[redirects]]
 from = "/*"
 to = "/index.html"
